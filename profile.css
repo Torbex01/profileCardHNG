@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Profile Card */
+.profile-card {
+    height: auto;
+    position: relative;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.job-title {
+    color: #0073e6;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.bio, .location, .email {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+ a:hover {
+    color: #ff6600;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+   h2, p{ color: #fff;}
+}
+
+.dark-mode .profile-card {
+    background: #2d2d2d;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .job-title{
+    color: #0073e6;
+}
+
+.dark-mode .social-links a {
+    color: #ffcc00;
+}
+
+.dark-mode .social-links a:hover {
+    color: #ff6600;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#dark-mode-toggle:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+}
+
+/* UTC Time */
+.utc-time {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1c1818;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 400px) {
+    .profile-card {
+        width: 85%;
+        padding: 20px;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .bio {
+        font-size: 12px;
+    }
+}
+

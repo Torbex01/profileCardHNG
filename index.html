@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <div class="profile-card">
+        <button id="dark-mode-toggle">🌙</button>
+        <img src="./oluwatobi pic.jpg" alt="Profile Picture" class="profile-img" data-testid="profilePicture">
+        <h2 data-testid="fullName">Oluwatobi Paul Awonuga</h2>
+        <p class="job-title" data-testid="jobTitle">Frontend Developer</p>
+        <p class="bio" data-testid="shortBio">
+            Passionate Frontend Developer skilled in HTML, CSS, JavaScript, and React.js. Focused on building interactive and accessible web applications with user-friendly experiences. A graduate with distinction in HND, Oluwatobi received hands-on training at SAIL Innovation Lab. Eager to learn and collaborate, he stays up-to-date with the latest technologies and is committed to contributing to impactful projects in a team-oriented environment.
+        </p>
+        <p class="location" data-testid="currentLocation">Lagos, Nigeria</p>
+        <p class="email" data-testid="emailAddress">
+            <a href="mailto:oluwatobiawonuga@gmail.com">oluwatobiawonuga@gmail.com</a>
+        </p>
+        
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://github.com/Torbex01" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/oluwatobi-awonuga/" target="_blank">LinkedIn</a>
+            <a href="https://x.com/Oluwatobi_Paul1" target="_blank">Twitter</a>
+        </div>
+    
+        <p class="utc-time" data-testid="currentTimeUTC">UTC Time: <span id="utc-time"></span></p>
+    </div>
+    
+
+    <script src="profile.js"></script>
+</body>
+</html>
